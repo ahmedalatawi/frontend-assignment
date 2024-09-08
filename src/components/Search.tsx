@@ -3,7 +3,7 @@ import SearchToggle from "./SearchToggle";
 
 export default function Search() {
   return (
-    <form className="sm:flex sm:items-center w-full max-w-7xl mx-auto pt-32 px-8 gap-7">
+    <form className="sm:flex sm:items-center w-full max-w-7xl mx-auto pt-28 px-8 gap-7">
       <div className="relative w-full">
         <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
           <SearchIcon />
