@@ -1,12 +1,14 @@
-import { useState } from "react";
 import GridLightIcon from "../assets/icons/grid-light-icon.svg?react";
 import ListLightIcon from "../assets/icons/list-light-icon.svg?react";
 import ListDarkIcon from "../assets/icons/list-dark-icon.svg?react";
 import GridDarkIcon from "../assets/icons/grid-dark-icon.svg?react";
 
-export default function SearchToggle() {
-  const [isGridActive, setIsGridActive] = useState(true);
+interface Props {
+  isGridActive: boolean;
+  setIsGridActive: (active: boolean) => void;
+}
 
+export default function SearchToggle({ isGridActive, setIsGridActive }: Props) {
   return (
     <div className="text-base mt-4 sm:mt-0 text-secondary bg-dark rounded-xl border border-borderColor inline-flex p-1 font-medium sm:max-w-48 w-full">
       <button
