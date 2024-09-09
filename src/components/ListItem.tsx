@@ -10,7 +10,7 @@ export default function ListItem({ product, onSelect }: Props) {
   const { name, description, price, image, badges } = product;
 
   return (
-    <li className="pt-4">
+    <li className="[&:not(:first-child)]:pt-4">
       <div className="flex items-center space-x-3 rtl:space-x-reverse rounded-xl border bg-dark border-borderColor p-3">
         <Image name={image} className="w-7 h-7 rounded-lg" />
 

@@ -38,11 +38,21 @@ function App() {
           setIsGridActive={setIsGridActive}
         />
       </Search>
-      {isGridActive ? (
-        <Grid products={filteredProducts} onSelect={(p) => console.log(p)} />
-      ) : (
-        <List products={filteredProducts} onSelect={(p) => console.log(p)} />
-      )}
+      <div
+        className={`font-sans pt-7 pb-16 mx-auto lg:max-w-7xl ${
+          isGridActive ? "max-w-lg" : ""
+        } md:max-w-full px-8`}
+      >
+        <h2 className="text-xl font-semibold text-white mb-5">
+          {searchText ? "Results" : "All Products"}
+        </h2>
+
+        {isGridActive ? (
+          <Grid products={filteredProducts} onSelect={(p) => console.log(p)} />
+        ) : (
+          <List products={filteredProducts} onSelect={(p) => console.log(p)} />
+        )}
+      </div>
     </div>
   );
 }
