@@ -3,6 +3,6 @@ export interface Product {
   name: string;
   description: string;
   price: string;
-  image: JSX.Element;
+  image: string;
   badges: string[];
 }

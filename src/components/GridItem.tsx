@@ -1,4 +1,5 @@
 import { Product } from "../types";
+import Image from "./Image";
 
 interface Props {
   product: Product;
@@ -11,7 +12,9 @@ export default function GridItem({ product, onSelect }: Props) {
   return (
     <div className="bg-dark h-[412px] lg:h-[432px] md:h-full sm:h-full xxs:h-full flex flex-col justify-between rounded-xl border border-borderColor hover:scale-[1.05] transition-all relative overflow-hidden">
       <div>
-        <div>{image}</div>
+        <div>
+          <Image name={image} className="h-full w-full" />
+        </div>
         <div className="flex flex-col gap-3 p-4">
           <h4 className="text-base text-white font-normal">${price}</h4>
           <div className="flex flex-col gap-1">
@@ -35,7 +38,7 @@ export default function GridItem({ product, onSelect }: Props) {
         <button
           type="button"
           onClick={() => onSelect(product)}
-          className="w-full flex items-center justify-center py-3 border border-white text-base text-white font-medium cursor-pointer rounded-lg hover:opacity-75"
+          className="w-full py-3 border border-white text-base text-white font-medium cursor-pointer rounded-lg hover:opacity-75"
         >
           View Details
         </button>
