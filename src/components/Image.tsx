@@ -1,4 +1,5 @@
 import { lazy, Suspense } from "react";
+import Spinner from "./Spinner";
 
 type Props = {
   name: string;
@@ -9,7 +10,7 @@ export default function Image({ name, className }: Props) {
   const Svg = lazy(() => import(`../assets/products/${name}.svg?react`));
 
   return (
-    <Suspense fallback={<span className="text-white">Image loading...</span>}>
+    <Suspense fallback={<Spinner />}>
       <Svg alt={name} className={className} />
     </Suspense>
   );
