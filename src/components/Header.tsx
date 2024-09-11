@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Start from "../assets/star.svg?react";
+import Star from "../assets/star.svg?react";
 import LevelUpGaming from "../assets/level-up-gaming.svg?react";
 
 const tabs = [
@@ -37,7 +37,7 @@ export default function Header() {
     <div className="bg-dark transition-all duration-700 fixed right-0 left-0 z-50 top-0">
       <div className="flex justify-between w-full mx-auto font-sans h-16">
         <div className="flex items-center gap-2 md:gap-3 mr-6 ml-6">
-          <Start />
+          <Star />
           <LevelUpGaming />
         </div>
         <div className="flex items-center sm:gap-2 md:gap-4 lg:gap-8">
@@ -94,7 +94,7 @@ export default function Header() {
         >
           <div
             className={`w-full h-full bg-black absolute left-0 transition-all duration-300 ease-in-out top-8 ${
-              toggle ? "ssm:w-3/5 opacity-60" : "ssm:w-0 -z-10"
+              toggle ? "ssm:w-3/5 opacity-90" : "ssm:w-0 -z-10"
             }`}
           ></div>
           <div className="relative z-20 text-center pt-24 w-full ssm:w-3/5">

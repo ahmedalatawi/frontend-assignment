@@ -41,9 +41,9 @@ function App() {
       <div
         className={`font-sans pt-7 pb-16 mx-auto lg:max-w-7xl ${
           isGridActive ? "max-w-lg" : ""
-        } md:max-w-full px-8`}
+        } md:max-w-full sm:px-8 px-5`}
       >
-        <h2 className="text-xl font-semibold text-white mb-5">
+        <h2 className="text-xl font-semibold text-white mb-4">
           {searchText ? "Results" : "All Products"}
         </h2>
 

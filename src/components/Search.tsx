@@ -13,7 +13,7 @@ export default function Search({
   onChangeSearchText,
 }: Props) {
   return (
-    <div className="sm:flex sm:items-center w-full max-w-7xl mx-auto pt-28 px-8 gap-7">
+    <div className="sm:flex sm:items-center w-full max-w-7xl mx-auto pt-[6.4rem] sm:px-8 px-5 gap-7">
       <div className="relative w-full">
         <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
           <SearchIcon />
